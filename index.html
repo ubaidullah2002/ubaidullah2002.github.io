@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
 	
 
 
@@ -143,11 +146,27 @@ section:last-of-type {
 }
 
 
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
 </style>
 
 
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div id="particles-js"></div>
+    <div class="content-wrapper">
 	  
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -194,7 +213,7 @@ section:last-of-type {
 						// Create an array of typing text
 						const typingTexts = [
 						'Chemist   ',
-						'Int’l Hackathons Winner  ',
+						'Int'l Hackathons Winner  ',
 						// 'Scientific Data Analyst   ',
 						];
 
@@ -592,7 +611,7 @@ I'm always eager to collaborate, experiment, and innovate at the exciting inters
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://issuu.com/iupac/docs/iypt2019_-_final_report_web150#:~:text=The%20International%20Year%20of%20the%20Periodic%20Table,year%20in%20over%20130%20countries%2C%20with%20w"target="blank">International Year of the Periodic Table of Chemical Elements</a></h3>
-                <p>One day symposium on “International Year of the Periodic Table of Chemical Elements”</p>
+                <p>One day symposium on "International Year of the Periodic Table of Chemical Elements"</p>
 				<!-- Certificate of Participation</p> -->
 		      </div>
 	        </div>
@@ -605,7 +624,7 @@ I'm always eager to collaborate, experiment, and innovate at the exciting inters
               <div class="text mt-3 float-right d-block">
 
                 <h3 class="heading"><a href="https://www.instagram.com/share/p/_jGZpnA3L"target="blank">Catchup of Industry and Academia</a></h3>
-                <p>One day symposium on “Catchup of Industry and Academia” by University of Sialkot</p>
+                <p>One day symposium on "Catchup of Industry and Academia" by University of Sialkot</p>
 				<!-- Certificate of Participation </p> -->
             </div>
           </div>
@@ -619,7 +638,7 @@ I'm always eager to collaborate, experiment, and innovate at the exciting inters
 				<div class="text mt-3 float-right d-block">
   
 				  <h3 class="heading"><a href="https://www.instagram.com/share/p/BAEqaOKH5g"target="blank">Computer Aided Drug Design & DFT Studies</a></h3>
-				  <p>Workshop of computational chemistry on “Drug Analysis & Synthesis” by University of Sialkot</p>
+				  <p>Workshop of computational chemistry on "Drug Analysis & Synthesis" by University of Sialkot</p>
 				  <!-- Certificate of Participation</p> -->
 				</div>
 			  </div>
@@ -781,6 +800,8 @@ I'm always eager to collaborate, experiment, and innovate at the exciting inters
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
+  <script src="js/particles-config.js"></script>
+  </div>
     
   </body>
 </html>
